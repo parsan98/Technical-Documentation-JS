@@ -10,25 +10,24 @@
 
 <body>
   <header id="header">
-    <h1>JavaScript</h1>
     <img id="js-image"
          src="https://cdn-images-1.medium.com/max/1600/1*ot7tWiPCYC01pV0kGmK3qQ.png"
-         alt="javascript picture">
+         alt="JavaScript">
     <hr>
     <nav id="navbar">
-      <header id="nav-header"><h2>JS Documentation</h2></header>
-      <a href="#Introduction" class="nav-link"> Introduction </a>
-      <br>
-      <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
-      <br>
-      <a href="#Hello_World" class="nav-link">Hello World</a>
-      <br>
-      <a href="#Variables" class="nav-link">Variables</a>
-      <br>
-      <a href="#Constants" class="nav-link">Constants</a>
-      <br>
-      <a href="#Data_Types" class="nav-link">Data Types</a>
-      <br>
+      <header id="nav-header"><h1>JS Documentation</h1></header>
+        <a href="#Introduction" class="nav-link"> Introduction </a>
+        <br>
+        <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
+        <br>
+        <a href="#Hello_World" class="nav-link">Hello World</a>
+        <br>
+        <a href="#Variables" class="nav-link">Variables</a>
+        <br>
+        <a href="#Constants" class="nav-link">Constants</a>
+        <br>
+        <a href="#Data_Types" class="nav-link">Data Types</a>
+        <br>
     </nav>
   </header>
 
@@ -64,25 +63,21 @@
       <header><h2>JavaScript and Java</h2></header>
       <ul>
         <li> The JavaScript language resembles Java but does not have Java's
-          static typing and strong type checking. JavaScript follows most
-          Java expression syntax, naming conventions and basic control-flow
-          constructs which was the reason why it was renamed from
-          LiveScript to JavaScript.
+          static typing and strong type checking.
         </li>
         <li> In contrast to Java's compile-time system of classes built by
           declarations, JavaScript supports a runtime system based on a small
           number of data types representing numeric, Boolean, and string values.
         </li>
         <li>JavaScript has a prototype-based object model instead of the more
-          common class-based object model. The prototype-based model provides
-          dynamic inheritance; that is, what is inherited can vary for
-          individual objects. JavaScript also supports functions without
-          any special declarative requirements.
+          common class-based object model.
         </li>
         <li> JavaScript is a very free-form language compared to Java.
-          You do not have to declare all variables, classes, and methods.
-          You do not have to be concerned with whether methods are public,
-          private, or protected, and you do not have to implement interfaces.
+          You do not have to declare all variables, classes, and methods,
+          whether methods are public, private, or protected,
+          and you do not have to implement interfaces.
+        </li>
+        <li>
           Variables, parameters, and function return types are not explicitly
           typed.
         </li>
@@ -98,10 +93,11 @@
       </p>
       <pre>
         <code>
-          function greetMe(yourName) {
-              alert("Hello " + yourName);
-          }
-          greetMe("World");
+function greetMe(x) {
+  alert("Hello " + x);
+}
+greetMe("World!");
+// Output: Hello World!
         </code>
       </pre>
       <p> Select the code in the pad and hit Ctrl+R to
@@ -165,15 +161,15 @@
       </p>
       <pre>
         <code>
-          // THIS WILL CAUSE AN ERROR
-          function f() {};
-          const f = 5;
-          // THIS WILL CAUSE AN ERROR ALSO
-          function f() {
-            const g = 5;
-            var g;
-            //statements
-          }
+// ERROR!
+  function f() {};
+  const f = 5;
+// ANOTHER ERROR
+  function f() {
+    const g = 5;
+    var g;
+    //statements
+   }
         </code>
       </pre>
       <p> However, object attributes are not protected, so the following
@@ -181,8 +177,9 @@
       </p>
       <pre>
         <code>
-          const MY_OBJECT = {"key": "value"};
-          MY_OBJECT.key = "otherValue";
+// OK
+const x={"key": "value"};
+x.key = "otherValue";
         </code>
       </pre>
       <br>

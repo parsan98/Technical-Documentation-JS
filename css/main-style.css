@@ -1,1 +1,84 @@
 /* This is the main stylesheet */
+body {
+  line-height: 1.2em;
+}
+
+header {
+  color: maroon;
+}
+
+#js-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+}
+
+hr {
+  margin: 20px 0px 10px 0px;
+  width: 100%;
+  background-color: darkblue;
+  height: 2px;
+}
+
+#navbar {
+  border: solid;
+  padding: 20px;
+  border-width: medium;
+  border-color: darkblue;
+}
+
+#nav-header {
+  text-align: center;
+}
+
+.nav-link {
+  color: maroon;
+  display: block;
+  border: solid;
+  border-color: darkblue;
+  width: 90%;
+  padding: 10px;
+  margin: 0px auto 0px auto;
+}
+
+#main-doc {}
+
+.main-section {
+  padding: 5px;
+}
+
+code {
+  display: block;
+  margin: 5px auto 10px auto;
+  width: 180px;
+  border-style: inset;
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 0px 0px 25px 0px;
+}
+
+@media screen and (min-width: 800px) {
+  #navbar {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    height: 90vh;
+    width: 150px;
+  }
+  #header {
+    margin-left: 200px;
+  }
+  #main-doc {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  footer {
+    margin-left: 200px;
+  }
+}
